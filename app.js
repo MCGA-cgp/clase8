@@ -9,9 +9,11 @@ app.use(express.json())
 
 // Importo las rutas
 const products = require('./routes/products');
+const clients = require('./routes/clients');
 
 // Defino las rutas
 app.use('/', products);
+app.use('/', clients);
 
 
 //exportar la app
